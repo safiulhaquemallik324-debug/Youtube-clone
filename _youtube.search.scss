@@ -1,0 +1,42 @@
+.yt-search {
+    display: flex;
+    width: 600px;
+    /* desktop width */
+    height: 40px;
+    border: 1px solid #2c2c2c;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #1a1919;
+    margin-top: 10px;
+}
+
+.yt-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    background: #1a1919;
+    color: white;
+    display: block;
+}
+
+.ri-search-line {
+    color: #ffffff;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.search-btn {
+    width: 60px;
+    border: none;
+    background: #1a1919;
+    cursor: pointer;
+    font-size: 18px;
+    border-left: 1px solid #ccc;
+}
+
+.search-btn:hover {
+    background: #242323;
+}

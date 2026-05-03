@@ -1,0 +1,103 @@
+.body-container {
+    width: 100%;
+    max-height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    gap: 6vh;
+}
+
+.content-container {
+    transition: 0.3s;
+    margin-top: 70px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 30px;
+    width: calc(100% - 200px);
+    left: 180px;
+    position: relative;
+}
+
+.content-container.shift {
+    left: 200px;
+   
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    gap: 20px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    z-index: 5;
+    background-color: #000000;
+}
+
+.sidebar-icons {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    margin-left: 12px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-icons:hover {
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.sidebar-icons h1 {
+    font-size: 10px;
+    color: #fff;
+}
+
+.sidebar-icons i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.sidebar-icons img {
+    width: 28px;
+    height: 28px;
+}
+.sidebar .shorts{
+    color: #fff;
+    width:15px; 
+    height:15px;
+    margin-top: 4px;
+}
+.sidebar .premium{
+    width: 20px;
+    height: 20px;
+}
+.sidebar .studio{
+    width: 20px;
+    height: 20px;
+}
+.sidebar .music{
+    width: 20px;
+    height: 20px;
+}
+.sidebar .kids{
+    width: 20px;
+    height: 20px;
+}
+.about{
+    font-size: 12px;;
+}
+.terms{
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.copyright{
+    font-size: 13px;
+    font-weight: 600;
+}

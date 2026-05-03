@@ -1,0 +1,46 @@
+.shorts {
+    display: inline-block;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+}
+
+.shorts-txt {
+    display: flex;
+    gap: 10px;
+}
+
+.shorts-txt img {
+    width: 30px;
+    height: 30px;
+}
+
+.shorts-txt h1 {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.shorts-column {
+    width: 95%;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    // padding: 20px 25px;
+    height: 400px;
+    margin-top: 10px;
+   
+
+}
+
+.card {
+    height: 400px;
+     border: none !important;
+}
+
+.card img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    width: 100%;
+}
