@@ -1,0 +1,92 @@
+// =============================================
+// _search.scss — Search Bar & Mic
+// =============================================
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yt-search {
+    display: flex;
+    width: 560px;
+    height: 38px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--blur-sm));
+    transition: border-color var(--transition), background var(--transition);
+
+    &:focus-within {
+        border-color: rgba(255, 0, 0, 0.356);
+        background: rgba(255, 255, 255, 0.07);
+    }
+
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 0 16px;
+        font-size: 15px;
+        background: transparent;
+        color: var(--text-primary);
+
+        &::placeholder {
+            color: var(--text-muted);
+        }
+    }
+}
+
+.search-btn {
+    width: 56px;
+    border: none;
+    background: var(--glass-bg);
+    cursor: pointer;
+    border-left: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition);
+
+    .ri-search-line {
+        color: var(--text-primary);
+        font-size: 18px;
+    }
+
+    &:hover {
+        background:#FF0000;
+      
+    }
+
+}
+
+.mic-btn {
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--blur-sm));
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background var(--transition);
+
+    .ri-mic-line {
+        color: var(--text-primary);
+        font-size: 18px;
+    }
+
+    &:hover {
+        background:#FF0000;
+        transform: scale(0.9);
+    }
+}
+
+.yt-search  i:hover{
+    transform: scale(1.1);
+}
+

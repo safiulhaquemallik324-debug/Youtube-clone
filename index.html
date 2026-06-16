@@ -12,117 +12,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="header-container">
-        <div class="row">
-            <div class="col-3">
-                <div class="header">
-                    <!-- Toggle Button -->
-                    <button class="navbar-toggle" id="toggle">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                    <div class="youtube-logo">
-                        <img src="asset/youtube1.png">
-                    </div>
+    <!-- Header -->
+    <div class="header-container glass-header">
+        <div class="header-inner">
+            <!-- Left: Toggle + Logo -->
+            <div class="header-left">
+                <button class="navbar-toggle" id="toggle" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="youtube-logo">
+                    <img src="asset/youtube1.png" alt="YouTube">
                 </div>
             </div>
-            <div class="col-9">
-                <div class="setting">
-                    <div class="search-container">
-                        <div class="yt-search">
-                            <input type="text" placeholder="Search">
-                            <button class="search-btn">
-                                <i class="ri-search-line"></i>
-                            </button>
-                        </div>
-                        <button class="mic-btn">
-                            <i class="ri-mic-line"></i>
+
+            <!-- Center: Search -->
+            <div class="header-center">
+                <div class="search-container">
+                    <div class="yt-search">
+                        <input type="text" placeholder="Search">
+                        <button class="search-btn" aria-label="Search">
+                            <i class="ri-search-line"></i>
                         </button>
                     </div>
-                    <!---------------profiles------------------------------------------------------>
-                    <div class="profiles">
-                        <div class="yt-header-right">
-                            <div class="create-btn">
-                                <span class="icon"><i class="ri-add-large-fill"></i></span>
-                                <span class="text">Create</span>
-                            </div>
-                        </div>
-                        <div class="notification">
-                            <i class="ri-notification-4-line"></i>
-                        </div>
-                        <div class="account">
-                            <h1>S</h1>
-                        </div>
-                    </div>
+                    <button class="mic-btn" aria-label="Search by voice">
+                        <i class="ri-mic-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: Actions -->
+            <div class="header-right">
+                <button class="create-btn" aria-label="Create">
+                    <i class="ri-add-large-fill"></i>
+                    <span class="create-text">Create</span>
+                </button>
+                <button class="icon-btn notification" aria-label="Notifications">
+                    <i class="ri-notification-4-line"></i>
+                    <span class="notif-dot"></span>
+                </button>
+                <div class="account" aria-label="Account">
+                    <h1>S</h1>
                 </div>
             </div>
         </div>
     </div>
-    <!-------------------------------------------------------body starts------------------------------------------------------------------------------->
+
+    <!-- Body -->
     <div class="body-container">
+
+        <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
-
-            <a href="#"> <i class="ri-home-2-fill"></i>Home</a>
-            <a href="#"><img class="shorts" src="asset/youtube-shorts-white-icon.png" alt="youtube-shorts" />Shorts</a>
-            <a href="#"> <i class="bi bi-collection-play"></i>Subscriptions</a>
-
+            <a href="#" class="active"><i class="ri-home-2-fill"></i>Home</a>
+            <a href="#"><img class="shorts" src="asset/youtube-shorts-white-icon.png" alt="Shorts" />Shorts</a>
+            <a href="#"><i class="bi bi-collection-play"></i>Subscriptions</a>
             <hr>
-
             <a href="#"><i class="ri-history-line"></i>History</a>
             <a href="#"><i class="ri-download-line"></i>Downloads</a>
             <a href="#"><i class="ri-fire-fill"></i>Trending</a>
             <a href="#"><i class="ri-compass-line"></i>Explore</a>
-
             <hr>
-
-            <a href="#"><img class="premium" src="asset/youtube.png">YouTube Premium</a>
-            <a href="#"><img class="studio" src="asset/studio.png">YouTube Studio</a>
-            <a href="#"><img class="music" src="asset/music.png">YouTube Music</a>
-            <a href="#"><img class="kids" src="asset/kids.png">YouTube Kids</a>
-
+            <a href="#"><img class="premium" src="asset/youtube.png" alt="Premium">YouTube Premium</a>
+            <a href="#"><img class="studio" src="asset/studio.png" alt="Studio">YouTube Studio</a>
+            <a href="#"><img class="music" src="asset/music.png" alt="Music">YouTube Music</a>
+            <a href="#"><img class="kids" src="asset/kids.png" alt="Kids">YouTube Kids</a>
             <hr>
-
             <a href="#"><i class="bi bi-gear"></i>Settings</a>
             <a href="#"><i class="bi bi-flag"></i>Report history</a>
             <a href="#"><i class="bi bi-info-circle"></i>Help</a>
             <a href="#"><i class="ri-feedback-line"></i>Send feedback</a>
-
             <hr>
-
-            <p class ="about">About Press Copyright Contact us Creator Advertise Developers</p>
-            
+            <p class="about">About Press Copyright Contact us Creator Advertise Developers</p>
             <p class="terms">Terms Privacy Policy & Safety How YouTube works Test new features</p>
-           <p class="copyright"> © 2026 Google LLC</p>
-
+            <p class="copyright">© 2026 Google LLC</p>
         </aside>
 
+        <!-- Mini sidebar (icon only) -->
         <div class="home">
-            <div class="sidebar-icons">
+            <div class="sidebar-icons active-icon">
                 <i class="ri-home-2-fill"></i>
                 <h1>Home</h1>
             </div>
             <div class="sidebar-icons">
-                <img src="asset/youtube-shorts-white-icon.png" alt="youtube-shorts" />
+                <img src="asset/youtube-shorts-white-icon.png" alt="Shorts" />
                 <h1>Shorts</h1>
             </div>
             <div class="sidebar-icons">
                 <i class="bi bi-collection-play"></i>
-                <h1>Subscrpition</h1>
+                <h1>Subscriptions</h1>
             </div>
             <div class="sidebar-icons">
                 <i class="bi bi-person-circle"></i>
                 <h1>You</h1>
             </div>
         </div>
+
+        <!-- Main content -->
         <div class="content-container" id="content">
+
+            <!-- Category bar -->
             <div class="content">
-                <button class="scroll-btn left">❮</button>
+                <button class="scroll-btn-left scroll-btn" aria-label="Scroll left">&#10094;</button>
                 <div class="category-wrapper">
                     <div class="category-scroll">
                         <button class="category active">All</button>
@@ -136,435 +131,315 @@
                         <button class="category">Design</button>
                         <button class="category">Frontend</button>
                         <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
-                        <button class="category">JavaScript</button>
+                        <button class="category">Python</button>
+                        <button class="category">Tech</button>
+                        <button class="category">Movies</button>
+                        <button class="category">Comedy</button>
+                        <button class="category">Sports</button>
+                        <button class="category">Cooking</button>
+                        <button class="category">Travel</button>
+                        <button class="category">Marvel studios</button>
+                        <button class="category">Fifa world cup 2026</button>
+                        <button class="category">UI/UX Desginer</button>
+                        <button class="category">AI</button>
+                        <button class="category">Mixes</button>
+                        <button class="category">Trailers</button>
+                        <button class="category">Foddies</button>
+                        <button class="category">Recently uploaded</button>
+                        <button class="category">Watched</button>
+                        <button class="category">Posts</button>
                     </div>
                 </div>
-                <button class="scroll-btn right">❯</button>
+                <button class="scroll-btn-right scroll-btn" aria-label="Scroll right">&#10095;</button>
             </div>
 
-
-            <!---------------------------------------first col video------------------------------------------------------------------------------>
+            <!-- Video Section -->
             <div class="videosection">
+
+                <!-- First row videos -->
                 <div class="video-container-one">
+                    <!-- Video Card 1 -->
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/images (18).jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/images (18).jpg" alt="thumbnail">
+                                    <span class="duration-badge">12:34</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>S</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>S</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">Complete Responsive Website Design</h3>
+                                        <div class="channel-name">Anime You</div>
+                                        <div class="meta">
+                                            <span>28K views</span>
+                                            <span class="dot">•</span>
+                                            <span>1 year ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">Complete responsisve website desgin</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Anime you</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">28k views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">1 year ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-----------------------------------------------------------------------------------------------------scnd col video---------------------------------------->
+
+                    <!-- Video Card 2 -->
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/hq720.jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/hq720.jpg" alt="thumbnail">
+                                    <span class="duration-badge">18:22</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>M</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>M</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">How Marvel DESTROYED THOR</h3>
+                                        <div class="channel-name">ComicVerse</div>
+                                        <div class="meta">
+                                            <span>5.1M views</span>
+                                            <span class="dot">•</span>
+                                            <span>5 years ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">How Marvel DESTROYED THOR || ComicVerse</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Comicverse</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">5138k views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">5 years ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--------------------------three col video-------------------------------------------------------------------------------------------------------------------------->
+
+                    <!-- Video Card 3 -->
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/maxresdefault.jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/maxresdefault.jpg" alt="thumbnail">
+                                    <span class="duration-badge">4:02</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>M</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>E</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">Ed Sheeran – Sapphire (Official Music Video)</h3>
+                                        <div class="channel-name">Ed Sheeran</div>
+                                        <div class="meta">
+                                            <span>263M views</span>
+                                            <span class="dot">•</span>
+                                            <span>8 months ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">Ed Sheeran - Sapphire (Official Music Video)</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Ed sheeran</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">263m views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">8 months ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-------------------------------------------------four col vieo--------------------------------------------------------------------------------------------------------->
+
+                    <!-- Video Card 4 -->
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/maxresdefault (1).jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/maxresdefault (1).jpg" alt="thumbnail">
+                                    <span class="duration-badge">22:10</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>M</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>A</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">Stoicism: Become Undefeatable</h3>
+                                        <div class="channel-name">Aperture Thinking</div>
+                                        <div class="meta">
+                                            <span>1.3M views</span>
+                                            <span class="dot">•</span>
+                                            <span>4 years ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">Stoicism: Become Undefeatable</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Aperture thinking</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">1.3m views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">4 years ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-----------------------------------------------------shorts----------------------------------------------------------------------------------------------------------------------->
-                <div class="shorts">
+                <!-- Shorts Section -->
+                <div class="shorts-section">
                     <div class="shorts-txt">
-                        <img src="asset/icons8-youtube-shorts-48 (1).png">
+                        <img src="asset/icons8-youtube-shorts-48 (1).png" alt="Shorts">
                         <h1>Shorts</h1>
                     </div>
                     <div class="shorts-column">
-                        <div class="card"><img src="asset/yt short card1.jpg"></div>
-                        <div class="card"><img src="asset/card2.jpg"></div>
-                        <div class="card"><img src="asset/card3.jpg"></div>
-                        <div class="card"><img src="asset/card4.png"></div>
-                        <div class="card"><img src="asset/card5.jpg"></div>
-                        <div class="card"><img src="asset/card6.jpg"></div>
+                        <div class="short-card"><img src="asset/yt short card1.jpg" alt="short"></div>
+                        <div class="short-card"><img src="asset/card2.jpg" alt="short"></div>
+                        <div class="short-card"><img src="asset/card3.jpg" alt="short"></div>
+                        <div class="short-card"><img src="asset/card4.png" alt="short"></div>
+                        <div class="short-card"><img src="asset/card5.jpg" alt="short"></div>
+                        <div class="short-card"><img src="asset/card6.jpg" alt="short"></div>
                     </div>
                 </div>
-                <!------------------------scnd section videos-------------------------------------------->
+
+                <!-- Second row videos -->
                 <div class="video-container">
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/maxresdefault.jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/maxresdefault.jpg" alt="thumbnail">
+                                    <span class="duration-badge">4:02</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>M</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>E</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">Ed Sheeran – Sapphire (Official Music Video)</h3>
+                                        <div class="channel-name">Ed Sheeran</div>
+                                        <div class="meta">
+                                            <span>263M views</span>
+                                            <span class="dot">•</span>
+                                            <span>8 months ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">Ed Sheeran - Sapphire (Official Music Video)</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Ed sheeran</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">263m views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">8 months ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
-                    <!------------------------------------------------------------------------------->
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/hq720.jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/hq720.jpg" alt="thumbnail">
+                                    <span class="duration-badge">18:22</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>M</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>M</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">How Marvel DESTROYED THOR</h3>
+                                        <div class="channel-name">ComicVerse</div>
+                                        <div class="meta">
+                                            <span>5.1M views</span>
+                                            <span class="dot">•</span>
+                                            <span>5 years ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">How Marvel DESTROYED THOR || ComicVerse</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Comicverse</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">5138k views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">5 years ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!----------------------------------------------------------------------------------------------------->
+
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/hq720.jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/hq720.jpg" alt="thumbnail">
+                                    <span class="duration-badge">18:22</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>M</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>M</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">How Marvel DESTROYED THOR</h3>
+                                        <div class="channel-name">ComicVerse</div>
+                                        <div class="meta">
+                                            <span>5.1M views</span>
+                                            <span class="dot">•</span>
+                                            <span>5 years ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">How Marvel DESTROYED THOR || ComicVerse</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Comicverse</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">5138k views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">5 years ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!---------------------------------------------------------------------------------------------------->
+
                     <div class="video-container-page">
                         <div class="video-content">
-                            <div class="video-one">
-                                <a href="#" class="video-box">
-                                    <div class="thumb">
-                                        <img src="asset/images (18).jpg">
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="video-box">
+                                <div class="thumb">
+                                    <img src="asset/images (18).jpg" alt="thumbnail">
+                                    <span class="duration-badge">12:34</span>
+                                </div>
+                            </a>
                             <div class="video-details">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="account">
-                                            <h1>S</h1>
+                                <div class="vd-row">
+                                    <div class="vd-avatar">
+                                        <div class="account"><h1>S</h1></div>
+                                    </div>
+                                    <div class="vd-info">
+                                        <h3 class="title">Complete Responsive Website Design</h3>
+                                        <div class="channel-name">Anime You</div>
+                                        <div class="meta">
+                                            <span>28K views</span>
+                                            <span class="dot">•</span>
+                                            <span>1 year ago</span>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="detail">
-                                            <h3 class="title">Complete responsisve website desgin</h3>
-
-                                            <div class="views-upload">
-                                                <div class="channel-name">Anime you</div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="views">28k views</div>
-                                                <i class="ri-circle-fill "></i>
-                                                <div class="upload">1 year ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="hidden-content">
-                                            <div class="btn"><i class="ri-more-2-line"></i></div>
-                                        </div>
-                                    </div>
+                                    <button class="more-btn"><i class="ri-more-2-line"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!----------------ends------------------------------------------------------------------------------->
                 </div>
 
             </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="_sidebar.js"></script>
     <script src="_category.scroll.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+    </script>
+    <script>
+        // Category active state
+        document.querySelectorAll('.category').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.category').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Sidebar icon active state
+        document.querySelectorAll('.sidebar-icons').forEach(icon => {
+            icon.addEventListener('click', () => {
+                document.querySelectorAll('.sidebar-icons').forEach(i => i.classList.remove('active-icon'));
+                icon.classList.add('active-icon');
+            });
+        });
+
+        // More button tooltip/menu placeholder
+        document.querySelectorAll('.more-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+        });
+    </script>
 </body>
 
 </html>

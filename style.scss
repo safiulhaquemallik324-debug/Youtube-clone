@@ -1,16 +1,13 @@
-@import "_header.container";
-@import "_nav.toggle";
-@import "_youtube.logo";
-@import "_youtube.search";
-@import "_search.container";
-@import "_mic";
-@import "create-container";
-@import "_notify";
-@import "_account";
-@import "_sidebar.scss";
-@import "_content";
-@import "_video.container.scss";
-@import "_shorts.scss";
-@import"_clicksidebar.scss";
-@import "_video.section.scss";
-@import "_responsive";
+
+// =============================================
+ 
+@import '_variable.scss';
+@import '_base';
+@import '_header';
+@import '_search';
+@import '_sidebar';
+@import '_category';
+@import '_videos';
+@import '_shorts';
+@import  '_responsive';
+ 
