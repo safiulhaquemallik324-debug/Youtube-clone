@@ -116,6 +116,16 @@
         padding: 16px 10px 32px;
         gap: 24px;
     }
+    .category-scroll {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        cursor: grab;
+    }
+    
+    .category-scroll.active {
+        cursor: grabbing;
+    }
 
     .video-container-one,
     .video-container {
